@@ -1,0 +1,35 @@
+{
+  "WxMP": {
+    "AppKey": "",
+    "AppSecret": ""
+  },
+  "WxMiniApp": {
+    "AppKey": "",
+    "AppSecret": ""
+  },
+  "WxPay": {
+    "AppKey": "",
+    "AppSecret": "",
+    "MchId": "",
+    "Key": ""
+  },
+  "WxOpenPlatform": {
+    "AppKey": "",
+    "AppSecret": ""
+  },
+  "Login": {
+    "LoginTypes": "" //:['phone','wx']
+  },
+  "File": {
+    "Use": "local", // local,    "qiniu",   
+    "AppKey": "",
+    "AppSecret": "",
+    "Bucket": "",
+    "Zone": "CN_East", //CN_East,Default,CN_North,CN_South,US_North ,
+    "Url": ""
+  },
+  "SMS": {
+    "AppKey": "",
+    "AppSecret": ""
+  }
+}

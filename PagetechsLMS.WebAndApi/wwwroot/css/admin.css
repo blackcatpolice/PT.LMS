@@ -1,0 +1,32 @@
+﻿#main {
+    min-height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.el-aside {
+    background-color: rgb(84, 92, 100);
+}
+
+.el-header {
+    background-color: rgb(84, 92, 100);
+    display: flex;
+    flex-direction: row;
+}
+
+.el-footer {
+    background-color: rgb(84, 92, 100);
+    color: white;
+}
+
+.brand {
+    width: 200px;
+    color: white;
+}

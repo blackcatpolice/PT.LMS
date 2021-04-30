@@ -1,0 +1,184 @@
+﻿@using PageTechsLMS.Service.Settings;
+@inject SettingService settingService;
+
+<!DOCTYPE html>
+<html lang="en"
+      dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>@ViewData["Title"] - @settingService.SiteSetting?.SiteName</title>
+
+    <!-- Prevent the demo from appearing in search engines -->
+    <meta name="robots"
+          content="noindex">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CRoboto:400,500%7CExo+2:600&display=swap"
+          rel="stylesheet">
+
+    <!-- Preloader -->
+    <link type="text/css"
+          href="/luma/vendor/spinkit.css"
+          rel="stylesheet">
+
+    <!-- Perfect Scrollbar -->
+    <link type="text/css"
+          href="/luma/vendor/perfect-scrollbar.css"
+          rel="stylesheet">
+
+    <!-- Material Design Icons -->
+    <link type="text/css"
+          href="/luma/css/material-icons.css"
+          rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link type="text/css"
+          href="/luma/css/fontawesome.css"
+          rel="stylesheet">
+
+    <!-- Preloader -->
+    <link type="text/css"
+          href="/luma/css/preloader.css"
+          rel="stylesheet">
+
+    <!-- App CSS -->
+    <link type="text/css"
+          href="/luma/css/app.css"
+          rel="stylesheet">
+
+</head>
+
+<body class="layout-sticky-subnav layout-default ">
+
+    <div class="preloader">
+        <div class="sk-chase">
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+        </div>
+
+        <!-- <div class="sk-bounce">
+          <div class="sk-bounce-dot"></div>
+          <div class="sk-bounce-dot"></div>
+        </div> -->
+        <!-- More spinner examples at https://github.com/tobiasahlin/SpinKit/blob/master/examples.html -->
+    </div>
+
+    <!-- Header Layout -->
+    <div class="mdk-header-layout js-mdk-header-layout">
+
+        <!-- Header -->
+
+        <div id="header"
+             class="mdk-header mdk-header--bg-dark bg-dark js-mdk-header mb-0"
+             data-effects="parallax-background waterfall"
+             data-fixed
+             data-condenses>
+            <div class="mdk-header__bg">
+                <div class="mdk-header__bg-front"
+                     style="background-image: url(/luma/images/photodune-4161018-group-of-students-m.jpg);"></div>
+            </div>
+            <div class="mdk-header__content justify-content-center">
+
+                <div class="navbar navbar-expand navbar-dark-pickled-bluewood bg-transparent will-fade-background"
+                     id="default-navbar"
+                     data-primary>
+
+                    <partial name="_HeaderNavigatePartial" />
+                </div>
+
+                <div class="hero container page__container text-center text-md-left py-112pt">
+                    <h1 class="text-white text-shadow">学习 AI</h1>
+                    <p class="lead measure-hero-lead mx-auto mx-md-0 text-white text-shadow mb-48pt">
+                        行业专家教授的商业、技术和创新技能。通过我们的专业教程探索各种技能。
+
+                    </p>
+
+                    <a href="/Courses/CourseList"
+                       class="btn btn-lg btn-white btn--raised mb-16pt">浏览课程</a>
+
+                    @*<p class="mb-0">
+                        <a href=""
+                           class="text-white text-shadow"><strong>你是老师？</strong></a>
+                    </p>*@
+
+                </div>
+            </div>
+        </div>
+
+        <!-- // END Header -->
+        <!-- Header Layout Content -->
+        @RenderBody()
+        <!-- // END Header Layout Content -->
+        <!-- Footer -->
+
+        <div class="bg-white border-top-2 mt-auto">
+            <div class="container page__container page-section d-flex flex-column">
+                <p class="text-70 brand mb-24pt">
+                    <img class="brand-icon"
+                         src="/luma/images/logo/black-70@2x.png"
+                         width="30"
+                         alt="Luma"> PTLMS
+                </p>
+                <p class="measure-lead-max text-50 small mr-8pt">PTLMS(知页在线教育系统) 是一款优秀的在线教育系统，适用于企业，学校，培训机构等等</p>
+                <p class="mb-8pt d-flex">
+                    <a href="/Common/Terms" class="text-white-70 text-underline mr-8pt small">使用条款</a>
+                    <a href="/Common/PrivacyPolicy" class="text-white-70 text-underline small">隐私策略</a>
+                </p>
+                <p class="text-50 small mt-n1 mb-0">Copyright 2019 &copy; All rights <a href="https://pagetechs.com"> Pagetechs.com</a> .</p>
+            </div>
+        </div>
+
+        <!-- // END Footer -->
+
+    </div>
+    <!-- // END Header Layout -->
+
+    <!-- jQuery -->
+    <script src="/luma/vendor/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="/luma/vendor/popper.min.js"></script>
+    <script src="/luma/vendor/bootstrap.min.js"></script>
+
+    <!-- Perfect Scrollbar -->
+    <script src="/luma/vendor/perfect-scrollbar.min.js"></script>
+
+    <!-- DOM Factory -->
+    <script src="/luma/vendor/dom-factory.js"></script>
+
+    <!-- MDK -->
+    <script src="/luma/vendor/material-design-kit.js"></script>
+
+    <!-- App JS -->
+    <script src="/luma/js/app.js"></script>
+
+    <!-- Preloader -->
+    <script src="/luma/js/preloader.js"></script>
+
+    <script>
+        (function () {
+            'use strict';
+            var headerNode = document.querySelector('.mdk-header')
+            var layoutNode = document.querySelector('.mdk-header-layout')
+            var componentNode = layoutNode ? layoutNode : headerNode
+            componentNode.addEventListener('domfactory-component-upgraded', function () {
+                headerNode.mdkHeader.eventTarget.addEventListener('scroll', function () {
+                    var progress = headerNode.mdkHeader.getScrollState().progress
+                    var navbarNode = headerNode.querySelector('#default-navbar')
+                    navbarNode.classList.toggle('bg-transparent', progress <= 0.2)
+                })
+            })
+        })()
+    </script>
+
+</body>
+
+</html>

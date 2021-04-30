@@ -1,0 +1,12 @@
+/Users/leehuaming/Desktop/Projects/pagetechs-lms/PageTechsLMS.DataCore/obj/Debug/net5.0/PageTechsLMS.DataCore.csprojAssemblyReference.cache
+/Users/leehuaming/Desktop/Projects/pagetechs-lms/PageTechsLMS.DataCore/obj/Debug/net5.0/PageTechsLMS.DataCore.GeneratedMSBuildEditorConfig.editorconfig
+/Users/leehuaming/Desktop/Projects/pagetechs-lms/PageTechsLMS.DataCore/obj/Debug/net5.0/PageTechsLMS.DataCore.AssemblyInfoInputs.cache
+/Users/leehuaming/Desktop/Projects/pagetechs-lms/PageTechsLMS.DataCore/obj/Debug/net5.0/PageTechsLMS.DataCore.AssemblyInfo.cs
+/Users/leehuaming/Desktop/Projects/pagetechs-lms/PageTechsLMS.DataCore/obj/Debug/net5.0/PageTechsLMS.DataCore.csproj.CoreCompileInputs.cache
+/Users/leehuaming/Desktop/Projects/pagetechs-lms/PageTechsLMS.DataCore/bin/Debug/net5.0/PageTechsLMS.DataCore.deps.json
+/Users/leehuaming/Desktop/Projects/pagetechs-lms/PageTechsLMS.DataCore/bin/Debug/net5.0/PageTechsLMS.DataCore.dll
+/Users/leehuaming/Desktop/Projects/pagetechs-lms/PageTechsLMS.DataCore/bin/Debug/net5.0/ref/PageTechsLMS.DataCore.dll
+/Users/leehuaming/Desktop/Projects/pagetechs-lms/PageTechsLMS.DataCore/bin/Debug/net5.0/PageTechsLMS.DataCore.pdb
+/Users/leehuaming/Desktop/Projects/pagetechs-lms/PageTechsLMS.DataCore/obj/Debug/net5.0/PageTechsLMS.DataCore.dll
+/Users/leehuaming/Desktop/Projects/pagetechs-lms/PageTechsLMS.DataCore/obj/Debug/net5.0/ref/PageTechsLMS.DataCore.dll
+/Users/leehuaming/Desktop/Projects/pagetechs-lms/PageTechsLMS.DataCore/obj/Debug/net5.0/PageTechsLMS.DataCore.pdb

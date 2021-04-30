@@ -1,0 +1,36 @@
+﻿@page
+@model PagetechsLMS.WebAndApi.Pages.Pay.WxNativePayModel
+@{
+    ViewData["Title"] = "扫码支付";
+}
+<div class="mdk-header-layout__content page-content ">
+
+    <div class="d-flex justify-content-center  align-content-center mt-5">
+        <div class="card" style="width: 18rem;">
+            <div class="card-header">
+                <h5 class="card-title">请扫码支付</h5>
+            </div>
+            <div class="card-body" style="text-align:center;">
+                <img width="200" height="200" src="data:image/jpeg;base64,@Model.PayQrcode" />
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    <script>
+        var refresher = 0;
+        refresher = setInterval(function () {
+            $.ajax({
+                url: "/CheckOrderStatus?orderId=@Model.Order.Id",
+                type: "json",
+                method: "get",
+                success: function (res) {
+                    console.log(res)
+                    if (res.success) {
+                        window.location = "/Pay/WxNativePaySuccess?Id=@Model.Order.CourseId";
+                    }
+                }
+            })
+        }, 5000)
+    </script>
+}

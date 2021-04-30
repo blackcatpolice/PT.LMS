@@ -1,0 +1,14 @@
+/Users/leehuaming/Desktop/Projects/pagetechs-lms/Pagetechs.Framework/obj/Debug/net5.0/Pagetechs.Framework.csprojAssemblyReference.cache
+/Users/leehuaming/Desktop/Projects/pagetechs-lms/Pagetechs.Framework/obj/Debug/net5.0/Pagetechs.Framework.GeneratedMSBuildEditorConfig.editorconfig
+/Users/leehuaming/Desktop/Projects/pagetechs-lms/Pagetechs.Framework/obj/Debug/net5.0/Pagetechs.Framework.AssemblyInfoInputs.cache
+/Users/leehuaming/Desktop/Projects/pagetechs-lms/Pagetechs.Framework/obj/Debug/net5.0/Pagetechs.Framework.AssemblyInfo.cs
+/Users/leehuaming/Desktop/Projects/pagetechs-lms/Pagetechs.Framework/obj/Debug/net5.0/Pagetechs.Framework.csproj.CoreCompileInputs.cache
+/Users/leehuaming/Desktop/Projects/pagetechs-lms/Pagetechs.Framework/bin/Debug/net5.0/Pagetechs.Framework.deps.json
+/Users/leehuaming/Desktop/Projects/pagetechs-lms/Pagetechs.Framework/bin/Debug/net5.0/Pagetechs.Framework.dll
+/Users/leehuaming/Desktop/Projects/pagetechs-lms/Pagetechs.Framework/bin/Debug/net5.0/ref/Pagetechs.Framework.dll
+/Users/leehuaming/Desktop/Projects/pagetechs-lms/Pagetechs.Framework/bin/Debug/net5.0/Pagetechs.Framework.pdb
+/Users/leehuaming/Desktop/Projects/pagetechs-lms/Pagetechs.Framework/bin/Debug/net5.0/LitJson.dll
+/Users/leehuaming/Desktop/Projects/pagetechs-lms/Pagetechs.Framework/obj/Debug/net5.0/Pagetechs.Framework.csproj.CopyComplete
+/Users/leehuaming/Desktop/Projects/pagetechs-lms/Pagetechs.Framework/obj/Debug/net5.0/Pagetechs.Framework.dll
+/Users/leehuaming/Desktop/Projects/pagetechs-lms/Pagetechs.Framework/obj/Debug/net5.0/ref/Pagetechs.Framework.dll
+/Users/leehuaming/Desktop/Projects/pagetechs-lms/Pagetechs.Framework/obj/Debug/net5.0/Pagetechs.Framework.pdb

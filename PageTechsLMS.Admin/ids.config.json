@@ -1,0 +1,37 @@
+{
+  "Clients": [
+    {
+      "ClientId": "AdminPanel",
+      "ClientName": "Oryx Admin Panel",
+      "ClientSecrets": [ "psshop_secret" ],
+      "AllowedGrantTypes": [ "client_credentials" ], 
+      "AllowedScopes": [ "profile", "openid", "email", "role", "MainPortal", "offline_access" ]
+    }
+  ],
+  "ApiResources": [
+    {
+      "Name": "MainPortal",
+      "Scope": "MainPortal"
+    }
+  ],
+  "IdentityResource": [
+  ],
+  "AuthorityHost": "",
+
+  "Roles": [ "admin", "user" ],
+  "Users": [
+    {
+      "UserName": "admin",
+      "Password": "Admin123#",
+      "Roles": [ "admin" ]
+    },
+    {
+      "UserName": "user",
+      "Password": "Admin123#",
+      "Roles": [ "user" ]
+    }
+  ],
+  "Permission": [
+
+  ]
+}

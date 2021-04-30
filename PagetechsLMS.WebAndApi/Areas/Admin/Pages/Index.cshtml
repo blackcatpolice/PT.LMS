@@ -1,0 +1,23 @@
+﻿@page
+@model PagetechsLMS.WebAndApi.Areas.Admin.IndexModel
+@{
+    Layout = "_Layout";
+}
+
+<div id="app">
+    <el-button @@click="visible = true">Button</el-button>
+    <el-dialog :visible.sync="visible" title="Hello world">
+        <p>Try Element</p>
+    </el-dialog>
+</div>
+
+
+@section Scripts{
+    <script>
+    new Vue({
+            el: '#app',
+            data: function () {
+                return { visible: false }
+            }
+        })</script>
+}

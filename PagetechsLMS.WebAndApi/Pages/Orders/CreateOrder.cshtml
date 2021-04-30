@@ -1,0 +1,62 @@
+﻿@page
+@model PagetechsLMS.WebAndApi.Pages.Orders.CreateOrderModel
+@{
+    ViewData["Title"] = "创建订单"; 
+}
+<div class="mdk-header-layout__content page-content ">
+
+    <form method="post">
+        <input type="hidden" name="Id" value="@Model.CourseData.Id" />
+        <div class="d-flex justify-content-center  align-content-center mt-5">
+            <div class="card" style="width: 18rem;">
+                <img src="@Model.CourseData.Cover" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">@Model.CourseData.Name</h5>
+                    <p class="card-text">@Model.CourseData.Description</p>
+                    <p class="card-text">价格： @Model.CourseData.Price</p> 
+                </div>
+                <div class="card-footer">
+                    <div>
+                        @if (!string.IsNullOrEmpty(Model.PayData))
+                        {
+                            <button class="btn btn-danger" type="button" onclick="callpay()">支付</button>
+                        }
+                        else
+                        {
+                            <button class="btn btn-danger">支付</button>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </form>
+</div>
+@section Scripts{
+    <script type="text/javascript">
+         function onBridgeReady() {
+            WeixinJSBridge.invoke(
+                'getBrandWCPayRequest',
+                @Html.Raw(Model.PayData),
+                function (res) {
+                    if (res.err_msg == "get_brand_wcpay_request:ok") {
+                        // 使用以上方式判断前端返回,微信团队郑重提示：
+                        //res.err_msg将在用户支付成功后返回ok，但并不保证它绝对可靠。
+                    }
+                });
+        }
+        function callpay() {
+            if (typeof WeixinJSBridge == "undefined") {
+                if (document.addEventListener) {
+                    document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+                } else if (document.attachEvent) {
+                    document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+                    document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+                }
+            } else {
+                onBridgeReady();
+                console.log("onBridgeReady")
+            }
+        }
+
+    </script>
+}
