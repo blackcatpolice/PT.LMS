@@ -2,6 +2,8 @@
 
 A project that build  with .net 5 ,  identityserver4 ,Typescript ,Reac , Antd Design from pagetechs.com.
 
+A Learning Management System
+
 
 ## Diretory
 
